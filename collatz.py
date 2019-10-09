@@ -14,16 +14,6 @@ def collatz(int):
      temp = 1 + collatz(3*int+1)
      dict[int] = temp
      return temp
-
-
-def collatzi (int):
-    if int == 1:
-        return 1
-    if int%2==0:
-        return 1+collatzi(int/2)
-    else:
-        return 1+collatzi(3*int+1)
-biggest = 0
 num = -1
 for i in range(1,int(input())):
     temp = collatz(i)
